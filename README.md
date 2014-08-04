@@ -13,6 +13,9 @@ and receive information.
 The Due provides 6 ADC with 12 bit resolution, reading 0-3.3 V. The Due also provides 2 DACs with 12 bit precision,
 putting out 0-3.3 V, and a host of digital i/o lines.
 
+The controller monitors PMT currents via ADC0 and ADC1, and provides control of the plate voltages via DAC0 an DAC1.
+Information about tube voltage (command), status, and anode current is displayed on a 16x2 LCD display.
+
 Tubes considered:
 
 PMT0: Hamamatsu H7422P-40: 
