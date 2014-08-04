@@ -1,5 +1,5 @@
-PMTController
--------------
+## PMTController
+
 
 Controller for Photomultiplier Tubes using an Ardinuino Due
 
@@ -15,24 +15,22 @@ putting out 0-3.3 V, and a host of digital i/o lines.
 
 Tubes considered:
 
-PMT0: Hamamatsu H7422P-40 
--------------------------
-* Control voltage 0.5-0.8 or 0.9V - full range (DAC0), supplied to
+PMT0: Hamamatsu H7422P-40: 
+  * Control voltage 0.5-0.8 or 0.9V - full range (DAC0), supplied to
 M9012 controller unit. 
-* Trip signal (PMT Error) detected on digital line 22. Max anode current 2 uA; built-in detection.
-* Program must detect and provide for reset when requested (requires user intervention).
-* Computer control of fan shutoff if needed.
+  * Trip signal (PMT Error) detected on digital line 22. Max anode current 2 uA; built-in detection.
+  * Program must detect and provide for reset when requested (requires user intervention).
+  * Computer control of fan shutoff if needed.
 
 PMT1: Hamamatsu H10721-20:
---------------------------
-* Control voltage: 0.5-1.1V for full range. 
-* No controller unit.
-* Read current output, compute gain. Max safe output current
+  * Control voltage: 0.5-1.1V for full range. 
+  * No controller unit.
+  * Read current output, compute gain. Max safe output current
 is listed at 100 microamps; set trip for 10 microamps. 
 
 
-License
--------
+## License
+
 The MIT License (MIT)
 
 Copyright (c) 2014 Paul B. Manis, Ph.D.
